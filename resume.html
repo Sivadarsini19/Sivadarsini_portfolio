@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivadarsini S - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a1a; font-size: 13px; line-height: 1.5; }
+        .page { max-width: 800px; margin: 0 auto; padding: 40px 45px; }
+        .header { border-bottom: 3px solid #e94560; padding-bottom: 18px; margin-bottom: 20px; }
+        .name { font-size: 32px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px; }
+        .title { font-size: 14px; color: #e94560; font-weight: 600; margin: 4px 0 10px; }
+        .contact-row { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; color: #444; }
+        .contact-row span { display: flex; align-items: center; gap: 5px; }
+        h2 { font-size: 13px; font-weight: 700; color: #e94560; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid #eee; padding-bottom: 4px; margin: 16px 0 10px; }
+        .edu-row, .exp-row { display: flex; justify-content: space-between; align-items: flex-start; }
+        .bold { font-weight: 600; }
+        .muted { color: #666; font-size: 12px; }
+        .badge { background: #fff0f3; color: #e94560; border: 1px solid #e94560; border-radius: 4px; padding: 1px 7px; font-size: 11px; font-weight: 600; }
+        ul { padding-left: 16px; margin-top: 4px; }
+        ul li { margin-bottom: 3px; color: #333; }
+        .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .skill-group .label { font-weight: 600; color: #333; font-size: 12px; }
+        .skill-group .items { color: #555; font-size: 12px; }
+        .proj-title { font-weight: 600; }
+        .proj-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px; }
+        .mb { margin-bottom: 12px; }
+        .print-btn { position: fixed; top: 20px; right: 20px; background: #e94560; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; z-index: 999; box-shadow: 0 4px 15px rgba(233,69,96,0.4); }
+        @media print { .print-btn { display: none; } body { font-size: 12px; } .page { padding: 25px 30px; } }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">⬇ Download PDF</button>
+    <div class="page">
+        <div class="header">
+            <div class="name">SIVADARSINI S</div>
+            <div class="title">Programmer Analyst | Full Stack Developer | AI Enthusiast</div>
+            <div class="contact-row">
+                <span>📧 sivadarsini19@gmail.com</span>
+                <span>📞 +91 8838049368</span>
+                <span>📍 Coimbatore, Tamil Nadu</span>
+                <span>🔗 linkedin.com/in/sivadarsini19</span>
+                <span>💻 github.com/Sivadarsini19</span>
+            </div>
+        </div>
+
+        <h2>Education</h2>
+        <div class="mb">
+            <div class="edu-row">
+                <span class="bold">Sri Ramakrishna Engineering College, Coimbatore</span>
+                <span class="muted">2022 – 2026</span>
+            </div>
+            <div>B.Tech Information Technology (Cyber Security) &nbsp;<span class="badge">CGPA: 8.51</span></div>
+            <div class="edu-row" style="margin-top:8px">
+                <span class="bold">Avila Convent Matriculation Higher Secondary School</span>
+                <span class="muted">2022</span>
+            </div>
+            <div>HSC: 94% &nbsp;|&nbsp; SSLC: 82.2%</div>
+        </div>
+
+        <h2>Experience</h2>
+        <div class="mb">
+            <div class="exp-row">
+                <span class="bold">Cognizant Technology Solutions India</span>
+                <span class="badge">Feb 2026 – Jun 2026</span>
+            </div>
+            <div class="muted" style="margin-bottom:4px">Programmer Analyst Intern</div>
+            <ul>
+                <li>Contributed to ClinicFlow, a web-based healthcare management platform streamlining patient appointments, billing and admin workflows.</li>
+                <li>Implemented billing module business logic, managed transaction records and optimized SQL Server database operations.</li>
+                <li>Developed responsive UIs with React.js, integrated APIs, performed testing and debugging to improve reliability.</li>
+            </ul>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="mb">
+            <div class="proj-row"><span class="proj-title">AI-Powered Urban Mobility Management System</span><span class="muted">Jun 2025 – Apr 2026</span></div>
+            <div class="muted" style="margin-bottom:3px">PPO Reinforcement Learning · Computer Vision · LLaMA · Smart Parking</div>
+            <ul><li>Optimizes traffic flow, monitors crowd density and manages smart parking using PPO-RL, CV and LLaMA-based reasoning.</li></ul>
+        </div>
+        <div class="mb">
+            <div class="proj-row"><span class="proj-title">ClinicFlow Healthcare Management System</span><span class="muted">Feb 2026 – Jun 2026</span></div>
+            <div class="muted" style="margin-bottom:3px">ASP.NET Core · React.js · SQL Server</div>
+            <ul><li>Automated appointment scheduling, billing and patient workflow management with full-stack development and testing.</li></ul>
+        </div>
+        <div class="mb">
+            <div class="proj-row"><span class="proj-title">AI-Based Alzheimer's Disease Detection</span><span class="muted">Jun 2024 – Apr 2025</span></div>
+            <div class="muted" style="margin-bottom:3px">CNN · MRI Analysis · Image Preprocessing</div>
+            <ul><li>Built a CNN model to analyze MRI brain scans and identify early Alzheimer's indicators with improved prediction accuracy.</li></ul>
+        </div>
+        <div class="mb">
+            <div class="proj-row"><span class="proj-title">Real-Time Smart Accident Detection System</span><span class="muted">Jul 2024 – Oct 2024</span></div>
+            <div class="muted" style="margin-bottom:3px">OpenCV · YOLOv8 · Deep Learning</div>
+            <ul><li>Detects road accidents from live video feeds with automated alert generation for faster emergency response.</li></ul>
+        </div>
+        <div class="mb">
+            <div class="proj-row"><span class="proj-title">AI-Powered Badminton Posture Analysis</span><span class="muted">Jun 2025 – Apr 2026</span></div>
+            <div class="muted" style="margin-bottom:3px">OpenPose · Computer Vision</div>
+            <ul><li>Tracks player movements and body alignment during gameplay to generate performance insights and reduce injury risks.</li></ul>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="skills-grid mb">
+            <div class="skill-group"><div class="label">Languages</div><div class="items">Java, C, C#, Python, SQL</div></div>
+            <div class="skill-group"><div class="label">Frameworks</div><div class="items">ASP.NET Core, React.js, Flask, Streamlit, HTML/CSS</div></div>
+            <div class="skill-group"><div class="label">Database</div><div class="items">SQL Server, Query Optimization</div></div>
+            <div class="skill-group"><div class="label">Tools</div><div class="items">GitHub, VS Code, PyCharm, Burp Suite, Figma</div></div>
+            <div class="skill-group"><div class="label">ML / AI</div><div class="items">CNN, YOLOv8, OpenPose, OpenCV, LLaMA</div></div>
+            <div class="skill-group"><div class="label">Concepts</div><div class="items">OOP, REST APIs, Full Stack, Agile, Testing</div></div>
+        </div>
+
+        <h2>Achievements & Certifications</h2>
+        <ul class="mb">
+            <li><span class="bold">Research Publication</span> – "Methods of Postural Assessment in Badminton: A Comparative Analysis of Conventional Techniques and AI-Powered Pose Estimation" – International Journal of Advanced Research in Computer Science</li>
+            <li><span class="bold">NPTEL Certification</span> – Industry 4.0 & Industrial Internet of Things (Elite + Silver)</li>
+            <li><span class="bold">NPTEL Certification</span> – Practical Cyber Security for Cyber Security Practitioners</li>
+            <li><span class="bold">CSI Club Executive Member</span> – Sri Ramakrishna Engineering College (2023–2024)</li>
+        </ul>
+    </div>
+</body>
+</html>
